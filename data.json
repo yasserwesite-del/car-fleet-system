@@ -1,0 +1,35 @@
+{
+  "carsData": [],
+  "deliveriesData": [],
+  "restaurantsData": [],
+  "usersData": [
+    {
+      "id": 1,
+      "username": "Naif",
+      "email": "naif@naif.com",
+      "password": "123",
+      "role": "data_entry",
+      "created": "2025-11-30",
+      "status": "نشط"
+    },
+    {
+      "id": 2,
+      "username": "Ibrahim",
+      "email": "ibrahim@naif.com",
+      "password": "123",
+      "role": "admin",
+      "created": "2025-11-30",
+      "status": "نشط"
+    },
+    {
+      "id": 3,
+      "username": "Yasser",
+      "email": "yasser@naif.com",
+      "password": "123@321",
+      "role": "super_admin",
+      "created": "2025-11-30",
+      "status": "نشط"
+    }
+  ],
+  "lastSync": "2024-01-01T00:00:00.000Z"
+}
