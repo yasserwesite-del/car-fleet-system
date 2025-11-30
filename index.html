@@ -1682,7 +1682,6 @@ function showSyncNotification(message, type) {
 async function loadDataFromGitHub() {
     if (!GITHUB_DATA_URL) {
         console.log('⚠️ لم يتم تعيين رابط GitHub');
-        showSyncNotification('لم يتم تعيين رابط GitHub', 'warning');
         return false;
     }
 
@@ -1695,48 +1694,69 @@ async function loadDataFromGitHub() {
         }
 
         const remoteData = await response.json();
+        
+        // ✅ التحقق من وجود بيانات حقيقية في GitHub
+        if (!remoteData || Object.keys(remoteData).length === 0) {
+            console.log('📭 بيانات GitHub فارغة - تجاهل المزامنة');
+            return false;
+        }
 
-        // مقارنة البيانات وتحديثها إذا كانت هناك تغييرات
         let hasChanges = false;
 
-        if (JSON.stringify(remoteData.carsData) !== JSON.stringify(carsData)) {
-            carsData = remoteData.carsData;
-            hasChanges = true;
+        // 🔄 دمج البيانات بدلاً من الاستبدال الكامل
+        // 1. دمج السيارات
+        if (remoteData.carsData && remoteData.carsData.length > 0) {
+            const newCars = remoteData.carsData.filter(remoteCar => 
+                !carsData.some(localCar => localCar.number === remoteCar.number)
+            );
+            if (newCars.length > 0) {
+                carsData = [...carsData, ...newCars];
+                hasChanges = true;
+                console.log(`✅ تم إضافة ${newCars.length} سيارة جديدة`);
+            }
         }
 
-        if (JSON.stringify(remoteData.deliveriesData) !== JSON.stringify(deliveriesData)) {
-            deliveriesData = remoteData.deliveriesData;
-            hasChanges = true;
+        // 2. دمج المطاعم
+        if (remoteData.restaurantsData && remoteData.restaurantsData.length > 0) {
+            const newRestaurants = remoteData.restaurantsData.filter(remoteRest => 
+                !restaurantsData.some(localRest => localRest.name === remoteRest.name)
+            );
+            if (newRestaurants.length > 0) {
+                restaurantsData = [...restaurantsData, ...newRestaurants];
+                hasChanges = true;
+                console.log(`✅ تم إضافة ${newRestaurants.length} مطعم جديد`);
+            }
         }
 
-        if (JSON.stringify(remoteData.restaurantsData) !== JSON.stringify(restaurantsData)) {
-            restaurantsData = remoteData.restaurantsData;
-            hasChanges = true;
-        }
-
-        if (JSON.stringify(remoteData.usersData) !== JSON.stringify(usersData)) {
-            usersData = remoteData.usersData;
-            hasChanges = true;
+        // 3. دعم المستخدمين
+        if (remoteData.usersData && remoteData.usersData.length > 0) {
+            const newUsers = remoteData.usersData.filter(remoteUser => 
+                !usersData.some(localUser => localUser.username === remoteUser.username)
+            );
+            if (newUsers.length > 0) {
+                usersData = [...usersData, ...newUsers];
+                hasChanges = true;
+                console.log(`✅ تم إضافة ${newUsers.length} مستخدم جديد`);
+            }
         }
 
         if (hasChanges) {
-            saveAllData(); // حفظ محلي
+            saveAllData();
             loadAllData();
-            console.log('✅ تم تحميل البيانات الجديدة من GitHub');
-            showSyncNotification('تم تحميل البيانات من GitHub', 'success');
+            console.log('✅ تم دمج البيانات بنجاح');
+            showSyncNotification('تم دمج البيانات الجديدة', 'success');
         } else {
-            console.log('ℹ️ لا توجد تغييرات في البيانات');
+            console.log('ℹ️ لا توجد بيانات جديدة للمزامنة');
         }
 
         return true;
 
     } catch (error) {
-        console.error('❌ خطأ في تحميل البيانات من GitHub:', error);
-        showSyncNotification('فشل في تحميل البيانات من GitHub', 'error');
+        console.error('❌ خطأ في تحميل البيانات:', error);
+        // ❌ لا تعرض إشعار خطأ حتى لا يزعج المستخدمين
         return false;
     }
 }
-
 // دالة لتصدير البيانات إلى ملف JSON للتحميل
 function exportDataForGitHub() {
     const dataToSave = {
