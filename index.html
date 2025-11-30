@@ -1589,23 +1589,20 @@ async function syncWithGoogleSheets() {
 }
 
 // دالة لبدء المزامنة التلقائية الدورية
+// دالة لبدء المزامنة التلقائية الدورية
 function startAutoSync() {
     // المزامنة كل 30 ثانية (يمكن تعديل المدة حسب الحاجة)
     const SYNC_INTERVAL = 30000;
     
-    // المزامنة الفورية عند بدء التطبيق
-    setTimeout(() => {
-        syncWithGoogleSheets();
-    }, 2000);
+    // لا تبدأ المزامنة إلا بعد تسجيل الدخول
+    console.log('⏳ المزامنة التلقائية بانتظار تسجيل الدخول...');
     
-    // المزامنة الدورية
+    // المزامنة الدورية بعد تسجيل الدخول فقط
     setInterval(() => {
         if (currentUser) { // فقط إذا كان المستخدم مسجل الدخول
             syncWithGoogleSheets();
         }
     }, SYNC_INTERVAL);
-    
-    console.log('🚀 تم تفعيل المزامنة التلقائية الدورية');
 }
 
 // دالة لعرض إشعارات المزامنة
@@ -2298,31 +2295,36 @@ function saveAllData() {
             }
         }
 
-                function login() {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            
-            if (!username || !password) {
-                alert(currentLanguage === 'ar' ? 'يرجى إدخال اسم المستخدم وكلمة المرور' : 'Please enter username and password');
-                return;
-            }
-            
-            const normalizedUsername = username.toLowerCase();
-            const user = usersData.find(u => u.username.toLowerCase() === normalizedUsername && u.password === password);
-            
-            if (user) {
-                currentUser = user;
-                document.getElementById('loginScreen').style.display = 'none';
-                document.getElementById('appScreen').style.display = 'block';
-                
-                updateUserInterface();
-                loadAllData();
-                
-                console.log(currentLanguage === 'ar' ? `تم الدخول بنجاح: ${user.username}` : `Login successful: ${user.username}`);
-            } else {
-                alert(currentLanguage === 'ar' ? 'اسم المستخدم أو كلمة المرور غير صحيحة' : 'Invalid username or password');
-            }
-        }
+             function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    if (!username || !password) {
+        alert(currentLanguage === 'ar' ? 'يرجى إدخال اسم المستخدم وكلمة المرور' : 'Please enter username and password');
+        return;
+    }
+    
+    const normalizedUsername = username.toLowerCase();
+    const user = usersData.find(u => u.username.toLowerCase() === normalizedUsername && u.password === password);
+    
+    if (user) {
+        currentUser = user;
+        document.getElementById('loginScreen').style.display = 'none';
+        document.getElementById('appScreen').style.display = 'block';
+        
+        updateUserInterface();
+        loadAllData();
+        
+        // بدء المزامنة التلقائية بعد تسجيل الدخول بنجاح
+        setTimeout(() => {
+            syncWithGoogleSheets();
+        }, 1000);
+        
+        console.log(currentLanguage === 'ar' ? `تم الدخول بنجاح: ${user.username}` : `Login successful: ${user.username}`);
+    } else {
+        alert(currentLanguage === 'ar' ? 'اسم المستخدم أو كلمة المرور غير صحيحة' : 'Invalid username or password');
+    }
+}
 
         function logout() {
             currentUser = null;
