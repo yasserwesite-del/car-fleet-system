@@ -2291,9 +2291,11 @@ function saveAllData() {
             }
         }
 
-             function login() {
-    const username = document.getElementById('username').value;
+           function login() {
+    const username = document.getElementById('username').value.trim();
     const password = document.getElementById('password').value;
+    
+    console.log('🔐 محاولة تسجيل دخول:', { username, password }); // للت debugging
     
     if (!username || !password) {
         alert(currentLanguage === 'ar' ? 'يرجى إدخال اسم المستخدم وكلمة المرور' : 'Please enter username and password');
@@ -2301,7 +2303,25 @@ function saveAllData() {
     }
     
     const normalizedUsername = username.toLowerCase();
-    const user = usersData.find(u => u.username.toLowerCase() === normalizedUsername && u.password === password);
+    
+    // البحث عن المستخدم مع طباعة البيانات للت debugging
+    console.log('👥 بيانات المستخدمين المتاحة:', usersData);
+    
+    const user = usersData.find(u => {
+        const userUsername = u.username ? u.username.toLowerCase() : '';
+        const userPassword = u.password || '';
+        const match = userUsername === normalizedUsername && userPassword === password;
+        
+        console.log('🔍 مقارنة مستخدم:', {
+            inputUsername: normalizedUsername,
+            dbUsername: userUsername,
+            inputPassword: password,
+            dbPassword: userPassword,
+            match: match
+        });
+        
+        return match;
+    });
     
     if (user) {
         currentUser = user;
@@ -2317,7 +2337,11 @@ function saveAllData() {
         }, 1000);
         
         console.log(currentLanguage === 'ar' ? `تم الدخول بنجاح: ${user.username}` : `Login successful: ${user.username}`);
+        
+        // إظهار رسالة نجاح
+        showSyncNotification(currentLanguage === 'ar' ? `مرحباً ${user.username}!` : `Welcome ${user.username}!`, 'success');
     } else {
+        console.log('❌ فشل تسجيل الدخول - لا يوجد تطابق');
         alert(currentLanguage === 'ar' ? 'اسم المستخدم أو كلمة المرور غير صحيحة' : 'Invalid username or password');
     }
 }
