@@ -1,7 +1,1467 @@
 {
-  "carsData": [],
-  "deliveriesData": [],
-  "restaurantsData": [],
+  "carsData": [
+    {
+      "id": 108,
+      "number": "54545454545",
+      "type": "يييييييي",
+      "model": "بببببببب",
+      "year": 2000,
+      "licenseExpiry": "2009-12-01",
+      "adLicenseExpiry": null,
+      "status": "نشطة"
+    },
+    {
+      "id": 1,
+      "number": "67120",
+      "type": "تويوتا",
+      "model": "كورولا",
+      "year": 2025,
+      "licenseExpiry": "2025-12-31",
+      "adLicenseExpiry": "2026-01-01",
+      "status": "نشطة"
+    },
+    {
+      "id": 2,
+      "number": "12345",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2020,
+      "licenseExpiry": "2025-12-15",
+      "adLicenseExpiry": "2026-06-15",
+      "status": "نشطة"
+    },
+    {
+      "id": 3,
+      "number": "67890",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2021,
+      "licenseExpiry": "2026-01-20",
+      "adLicenseExpiry": "2026-07-20",
+      "status": "نشطة"
+    },
+    {
+      "id": 4,
+      "number": "123435",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2022,
+      "licenseExpiry": "2025-02-25",
+      "adLicenseExpiry": "2026-08-24",
+      "status": "نشطة"
+    },
+    {
+      "id": 5,
+      "number": "555555",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2023,
+      "licenseExpiry": "2025-12-24",
+      "adLicenseExpiry": "2026-09-28",
+      "status": "تحت الصيانة"
+    },
+    {
+      "id": 6,
+      "number": "234525",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2024,
+      "licenseExpiry": "2026-05-08",
+      "adLicenseExpiry": "2026-11-02",
+      "status": "نشطة"
+    },
+    {
+      "id": 7,
+      "number": "290070",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2025,
+      "licenseExpiry": "2026-06-13",
+      "adLicenseExpiry": "2026-12-07",
+      "status": "نشطة"
+    },
+    {
+      "id": 8,
+      "number": "345615",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2026,
+      "licenseExpiry": "2026-07-19",
+      "adLicenseExpiry": "2027-01-11",
+      "status": "نشطة"
+    },
+    {
+      "id": 9,
+      "number": "401160",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2027,
+      "licenseExpiry": "2026-08-24",
+      "adLicenseExpiry": "2027-02-15",
+      "status": "نشطة"
+    },
+    {
+      "id": 10,
+      "number": "456705",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2028,
+      "licenseExpiry": "2026-09-29",
+      "adLicenseExpiry": "2027-03-22",
+      "status": "نشطة"
+    },
+    {
+      "id": 11,
+      "number": "512250",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2029,
+      "licenseExpiry": "2026-11-04",
+      "adLicenseExpiry": "2027-04-26",
+      "status": "نشطة"
+    },
+    {
+      "id": 12,
+      "number": "567795",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2030,
+      "licenseExpiry": "2026-12-10",
+      "adLicenseExpiry": "2027-05-31",
+      "status": "نشطة"
+    },
+    {
+      "id": 13,
+      "number": "623340",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2031,
+      "licenseExpiry": "2027-01-15",
+      "adLicenseExpiry": "2027-07-05",
+      "status": "نشطة"
+    },
+    {
+      "id": 14,
+      "number": "678885",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2032,
+      "licenseExpiry": "2027-02-20",
+      "adLicenseExpiry": "2027-08-09",
+      "status": "نشطة"
+    },
+    {
+      "id": 15,
+      "number": "734430",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2033,
+      "licenseExpiry": "2027-03-28",
+      "adLicenseExpiry": "2027-09-13",
+      "status": "نشطة"
+    },
+    {
+      "id": 16,
+      "number": "789975",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2034,
+      "licenseExpiry": "2027-05-03",
+      "adLicenseExpiry": "2027-10-18",
+      "status": "نشطة"
+    },
+    {
+      "id": 17,
+      "number": "845520",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2035,
+      "licenseExpiry": "2027-06-08",
+      "adLicenseExpiry": "2027-11-22",
+      "status": "نشطة"
+    },
+    {
+      "id": 18,
+      "number": "901065",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2036,
+      "licenseExpiry": "2027-07-14",
+      "adLicenseExpiry": "2027-12-27",
+      "status": "نشطة"
+    },
+    {
+      "id": 19,
+      "number": "956610",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2037,
+      "licenseExpiry": "2027-08-19",
+      "adLicenseExpiry": "2028-01-31",
+      "status": "نشطة"
+    },
+    {
+      "id": 20,
+      "number": "1012155",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2038,
+      "licenseExpiry": "2027-09-24",
+      "adLicenseExpiry": "2028-03-06",
+      "status": "نشطة"
+    },
+    {
+      "id": 21,
+      "number": "1067700",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2039,
+      "licenseExpiry": "2027-10-30",
+      "adLicenseExpiry": "2028-04-10",
+      "status": "نشطة"
+    },
+    {
+      "id": 22,
+      "number": "1123245",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2040,
+      "licenseExpiry": "2027-12-05",
+      "adLicenseExpiry": "2028-05-15",
+      "status": "نشطة"
+    },
+    {
+      "id": 23,
+      "number": "1178790",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2041,
+      "licenseExpiry": "2028-01-10",
+      "adLicenseExpiry": "2028-06-19",
+      "status": "نشطة"
+    },
+    {
+      "id": 24,
+      "number": "1234335",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2042,
+      "licenseExpiry": "2028-02-15",
+      "adLicenseExpiry": "2028-07-24",
+      "status": "نشطة"
+    },
+    {
+      "id": 25,
+      "number": "1289880",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2043,
+      "licenseExpiry": "2028-03-22",
+      "adLicenseExpiry": "2028-08-28",
+      "status": "نشطة"
+    },
+    {
+      "id": 26,
+      "number": "1345425",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2044,
+      "licenseExpiry": "2028-04-27",
+      "adLicenseExpiry": "2028-10-02",
+      "status": "نشطة"
+    },
+    {
+      "id": 27,
+      "number": "1400970",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2045,
+      "licenseExpiry": "2028-06-02",
+      "adLicenseExpiry": "2028-11-06",
+      "status": "نشطة"
+    },
+    {
+      "id": 28,
+      "number": "1456515",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2046,
+      "licenseExpiry": "2028-07-08",
+      "adLicenseExpiry": "2028-12-11",
+      "status": "نشطة"
+    },
+    {
+      "id": 29,
+      "number": "1512060",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2047,
+      "licenseExpiry": "2028-08-13",
+      "adLicenseExpiry": "2029-01-15",
+      "status": "نشطة"
+    },
+    {
+      "id": 30,
+      "number": "1567605",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2048,
+      "licenseExpiry": "2028-09-18",
+      "adLicenseExpiry": "2029-02-19",
+      "status": "نشطة"
+    },
+    {
+      "id": 31,
+      "number": "1623150",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2049,
+      "licenseExpiry": "2028-10-24",
+      "adLicenseExpiry": "2029-03-26",
+      "status": "نشطة"
+    },
+    {
+      "id": 32,
+      "number": "1678695",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2050,
+      "licenseExpiry": "2028-11-29",
+      "adLicenseExpiry": "2029-04-30",
+      "status": "نشطة"
+    },
+    {
+      "id": 33,
+      "number": "1734240",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2051,
+      "licenseExpiry": "2029-01-04",
+      "adLicenseExpiry": "2029-06-04",
+      "status": "نشطة"
+    },
+    {
+      "id": 34,
+      "number": "1789785",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2052,
+      "licenseExpiry": "2029-02-09",
+      "adLicenseExpiry": "2029-07-09",
+      "status": "نشطة"
+    },
+    {
+      "id": 35,
+      "number": "1845330",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2053,
+      "licenseExpiry": "2029-03-17",
+      "adLicenseExpiry": "2029-08-13",
+      "status": "نشطة"
+    },
+    {
+      "id": 36,
+      "number": "1900875",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2054,
+      "licenseExpiry": "2029-04-22",
+      "adLicenseExpiry": "2029-09-17",
+      "status": "نشطة"
+    },
+    {
+      "id": 37,
+      "number": "1956420",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2055,
+      "licenseExpiry": "2029-05-28",
+      "adLicenseExpiry": "2029-10-22",
+      "status": "نشطة"
+    },
+    {
+      "id": 38,
+      "number": "2011965",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2056,
+      "licenseExpiry": "2029-07-03",
+      "adLicenseExpiry": "2029-11-26",
+      "status": "نشطة"
+    },
+    {
+      "id": 39,
+      "number": "2067510",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2057,
+      "licenseExpiry": "2029-08-08",
+      "adLicenseExpiry": "2029-12-31",
+      "status": "نشطة"
+    },
+    {
+      "id": 40,
+      "number": "2123055",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2058,
+      "licenseExpiry": "2029-09-13",
+      "adLicenseExpiry": "2030-02-04",
+      "status": "نشطة"
+    },
+    {
+      "id": 41,
+      "number": "2178600",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2059,
+      "licenseExpiry": "2029-10-19",
+      "adLicenseExpiry": "2030-03-11",
+      "status": "نشطة"
+    },
+    {
+      "id": 42,
+      "number": "2234145",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2060,
+      "licenseExpiry": "2029-11-24",
+      "adLicenseExpiry": "2030-04-15",
+      "status": "نشطة"
+    },
+    {
+      "id": 43,
+      "number": "2289690",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2061,
+      "licenseExpiry": "2029-12-30",
+      "adLicenseExpiry": "2030-05-20",
+      "status": "نشطة"
+    },
+    {
+      "id": 44,
+      "number": "2345235",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2062,
+      "licenseExpiry": "2030-02-04",
+      "adLicenseExpiry": "2030-06-24",
+      "status": "نشطة"
+    },
+    {
+      "id": 45,
+      "number": "2400780",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2063,
+      "licenseExpiry": "2030-03-12",
+      "adLicenseExpiry": "2030-07-29",
+      "status": "نشطة"
+    },
+    {
+      "id": 46,
+      "number": "2456325",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2064,
+      "licenseExpiry": "2030-04-17",
+      "adLicenseExpiry": "2030-09-02",
+      "status": "نشطة"
+    },
+    {
+      "id": 47,
+      "number": "2511870",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2065,
+      "licenseExpiry": "2030-05-23",
+      "adLicenseExpiry": "2030-10-07",
+      "status": "نشطة"
+    },
+    {
+      "id": 48,
+      "number": "2567415",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2066,
+      "licenseExpiry": "2030-06-28",
+      "adLicenseExpiry": "2030-11-11",
+      "status": "نشطة"
+    },
+    {
+      "id": 49,
+      "number": "2622960",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2067,
+      "licenseExpiry": "2030-08-03",
+      "adLicenseExpiry": "2030-12-16",
+      "status": "نشطة"
+    },
+    {
+      "id": 50,
+      "number": "2678505",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2068,
+      "licenseExpiry": "2030-09-08",
+      "adLicenseExpiry": "2031-01-20",
+      "status": "نشطة"
+    },
+    {
+      "id": 51,
+      "number": "2734050",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2069,
+      "licenseExpiry": "2030-10-14",
+      "adLicenseExpiry": "2031-02-24",
+      "status": "نشطة"
+    },
+    {
+      "id": 52,
+      "number": "2789595",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2070,
+      "licenseExpiry": "2030-11-19",
+      "adLicenseExpiry": "2031-03-31",
+      "status": "نشطة"
+    },
+    {
+      "id": 53,
+      "number": "2845140",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2071,
+      "licenseExpiry": "2030-12-25",
+      "adLicenseExpiry": "2031-05-05",
+      "status": "نشطة"
+    },
+    {
+      "id": 54,
+      "number": "2900685",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2072,
+      "licenseExpiry": "2031-01-30",
+      "adLicenseExpiry": "2031-06-09",
+      "status": "نشطة"
+    },
+    {
+      "id": 55,
+      "number": "2956230",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2073,
+      "licenseExpiry": "2031-03-07",
+      "adLicenseExpiry": "2031-07-14",
+      "status": "نشطة"
+    },
+    {
+      "id": 56,
+      "number": "3011775",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2074,
+      "licenseExpiry": "2031-04-12",
+      "adLicenseExpiry": "2031-08-18",
+      "status": "نشطة"
+    },
+    {
+      "id": 57,
+      "number": "3067320",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2075,
+      "licenseExpiry": "2031-05-18",
+      "adLicenseExpiry": "2031-09-22",
+      "status": "نشطة"
+    },
+    {
+      "id": 58,
+      "number": "3122865",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2076,
+      "licenseExpiry": "2031-06-23",
+      "adLicenseExpiry": "2031-10-27",
+      "status": "نشطة"
+    },
+    {
+      "id": 59,
+      "number": "3178410",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2077,
+      "licenseExpiry": "2031-07-29",
+      "adLicenseExpiry": "2031-12-01",
+      "status": "نشطة"
+    },
+    {
+      "id": 60,
+      "number": "3233955",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2078,
+      "licenseExpiry": "2031-09-03",
+      "adLicenseExpiry": "2032-01-05",
+      "status": "نشطة"
+    },
+    {
+      "id": 61,
+      "number": "3289500",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2079,
+      "licenseExpiry": "2031-10-09",
+      "adLicenseExpiry": "2032-02-09",
+      "status": "نشطة"
+    },
+    {
+      "id": 62,
+      "number": "3345045",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2080,
+      "licenseExpiry": "2031-11-14",
+      "adLicenseExpiry": "2032-03-15",
+      "status": "نشطة"
+    },
+    {
+      "id": 63,
+      "number": "3400590",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2081,
+      "licenseExpiry": "2031-12-20",
+      "adLicenseExpiry": "2032-04-19",
+      "status": "نشطة"
+    },
+    {
+      "id": 64,
+      "number": "3456135",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2082,
+      "licenseExpiry": "2032-01-25",
+      "adLicenseExpiry": "2032-05-24",
+      "status": "نشطة"
+    },
+    {
+      "id": 65,
+      "number": "3511680",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2083,
+      "licenseExpiry": "2032-03-01",
+      "adLicenseExpiry": "2032-06-28",
+      "status": "نشطة"
+    },
+    {
+      "id": 66,
+      "number": "3567225",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2084,
+      "licenseExpiry": "2032-04-06",
+      "adLicenseExpiry": "2032-08-02",
+      "status": "نشطة"
+    },
+    {
+      "id": 67,
+      "number": "3622770",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2085,
+      "licenseExpiry": "2032-05-12",
+      "adLicenseExpiry": "2032-09-06",
+      "status": "نشطة"
+    },
+    {
+      "id": 68,
+      "number": "3678315",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2086,
+      "licenseExpiry": "2032-06-17",
+      "adLicenseExpiry": "2032-10-11",
+      "status": "نشطة"
+    },
+    {
+      "id": 69,
+      "number": "3733860",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2087,
+      "licenseExpiry": "2032-07-23",
+      "adLicenseExpiry": "2032-11-15",
+      "status": "نشطة"
+    },
+    {
+      "id": 70,
+      "number": "3789405",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2088,
+      "licenseExpiry": "2032-08-28",
+      "adLicenseExpiry": "2032-12-20",
+      "status": "نشطة"
+    },
+    {
+      "id": 71,
+      "number": "3844950",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2089,
+      "licenseExpiry": "2032-10-03",
+      "adLicenseExpiry": "2033-01-24",
+      "status": "نشطة"
+    },
+    {
+      "id": 72,
+      "number": "3900495",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2090,
+      "licenseExpiry": "2032-11-08",
+      "adLicenseExpiry": "2033-02-28",
+      "status": "نشطة"
+    },
+    {
+      "id": 73,
+      "number": "3956040",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2091,
+      "licenseExpiry": "2032-12-14",
+      "adLicenseExpiry": "2033-04-04",
+      "status": "نشطة"
+    },
+    {
+      "id": 74,
+      "number": "4011585",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2092,
+      "licenseExpiry": "2033-01-19",
+      "adLicenseExpiry": "2033-05-09",
+      "status": "نشطة"
+    },
+    {
+      "id": 75,
+      "number": "4067130",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2093,
+      "licenseExpiry": "2033-02-24",
+      "adLicenseExpiry": "2033-06-13",
+      "status": "نشطة"
+    },
+    {
+      "id": 76,
+      "number": "4122675",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2094,
+      "licenseExpiry": "2033-04-01",
+      "adLicenseExpiry": "2033-07-18",
+      "status": "نشطة"
+    },
+    {
+      "id": 77,
+      "number": "4178220",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2095,
+      "licenseExpiry": "2033-05-07",
+      "adLicenseExpiry": "2033-08-22",
+      "status": "نشطة"
+    },
+    {
+      "id": 78,
+      "number": "4233765",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2096,
+      "licenseExpiry": "2033-06-12",
+      "adLicenseExpiry": "2033-09-26",
+      "status": "نشطة"
+    },
+    {
+      "id": 79,
+      "number": "4289310",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2097,
+      "licenseExpiry": "2033-07-18",
+      "adLicenseExpiry": "2033-10-31",
+      "status": "نشطة"
+    },
+    {
+      "id": 80,
+      "number": "4344855",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2098,
+      "licenseExpiry": "2033-08-23",
+      "adLicenseExpiry": "2033-12-05",
+      "status": "نشطة"
+    },
+    {
+      "id": 81,
+      "number": "4400400",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2099,
+      "licenseExpiry": "2033-09-28",
+      "adLicenseExpiry": "2034-01-09",
+      "status": "نشطة"
+    },
+    {
+      "id": 82,
+      "number": "4455945",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2100,
+      "licenseExpiry": "2033-11-03",
+      "adLicenseExpiry": "2034-02-13",
+      "status": "نشطة"
+    },
+    {
+      "id": 83,
+      "number": "4511490",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2101,
+      "licenseExpiry": "2033-12-09",
+      "adLicenseExpiry": "2034-03-20",
+      "status": "نشطة"
+    },
+    {
+      "id": 84,
+      "number": "4567035",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2102,
+      "licenseExpiry": "2034-01-14",
+      "adLicenseExpiry": "2034-04-24",
+      "status": "نشطة"
+    },
+    {
+      "id": 85,
+      "number": "4622580",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2103,
+      "licenseExpiry": "2034-02-19",
+      "adLicenseExpiry": "2034-05-29",
+      "status": "نشطة"
+    },
+    {
+      "id": 86,
+      "number": "4678125",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2104,
+      "licenseExpiry": "2034-03-27",
+      "adLicenseExpiry": "2034-07-03",
+      "status": "نشطة"
+    },
+    {
+      "id": 87,
+      "number": "4733670",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2105,
+      "licenseExpiry": "2034-05-02",
+      "adLicenseExpiry": "2034-08-07",
+      "status": "نشطة"
+    },
+    {
+      "id": 88,
+      "number": "4789215",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2106,
+      "licenseExpiry": "2034-06-07",
+      "adLicenseExpiry": "2034-09-11",
+      "status": "نشطة"
+    },
+    {
+      "id": 89,
+      "number": "4844760",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2107,
+      "licenseExpiry": "2034-07-13",
+      "adLicenseExpiry": "2034-10-16",
+      "status": "نشطة"
+    },
+    {
+      "id": 90,
+      "number": "4900305",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2108,
+      "licenseExpiry": "2034-08-18",
+      "adLicenseExpiry": "2034-11-20",
+      "status": "نشطة"
+    },
+    {
+      "id": 91,
+      "number": "4955850",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2109,
+      "licenseExpiry": "2034-09-23",
+      "adLicenseExpiry": "2034-12-25",
+      "status": "نشطة"
+    },
+    {
+      "id": 92,
+      "number": "5011395",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2110,
+      "licenseExpiry": "2034-10-29",
+      "adLicenseExpiry": "2035-01-29",
+      "status": "نشطة"
+    },
+    {
+      "id": 93,
+      "number": "5066940",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2111,
+      "licenseExpiry": "2034-12-04",
+      "adLicenseExpiry": "2035-03-05",
+      "status": "نشطة"
+    },
+    {
+      "id": 94,
+      "number": "5122485",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2112,
+      "licenseExpiry": "2035-01-09",
+      "adLicenseExpiry": "2035-04-09",
+      "status": "نشطة"
+    },
+    {
+      "id": 95,
+      "number": "5178030",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2113,
+      "licenseExpiry": "2035-02-14",
+      "adLicenseExpiry": "2035-05-14",
+      "status": "نشطة"
+    },
+    {
+      "id": 96,
+      "number": "5233575",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2114,
+      "licenseExpiry": "2035-03-22",
+      "adLicenseExpiry": "2035-06-18",
+      "status": "نشطة"
+    },
+    {
+      "id": 97,
+      "number": "5289120",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2115,
+      "licenseExpiry": "2035-04-27",
+      "adLicenseExpiry": "2035-07-23",
+      "status": "نشطة"
+    },
+    {
+      "id": 98,
+      "number": "5344665",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2116,
+      "licenseExpiry": "2035-06-02",
+      "adLicenseExpiry": "2035-08-27",
+      "status": "نشطة"
+    },
+    {
+      "id": 99,
+      "number": "5400210",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2117,
+      "licenseExpiry": "2035-07-08",
+      "adLicenseExpiry": "2035-10-01",
+      "status": "نشطة"
+    },
+    {
+      "id": 100,
+      "number": "5455755",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2118,
+      "licenseExpiry": "2035-08-13",
+      "adLicenseExpiry": "2035-11-05",
+      "status": "نشطة"
+    },
+    {
+      "id": 101,
+      "number": "5511300",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2119,
+      "licenseExpiry": "2035-09-18",
+      "adLicenseExpiry": "2035-12-10",
+      "status": "نشطة"
+    },
+    {
+      "id": 102,
+      "number": "5566845",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2120,
+      "licenseExpiry": "2035-10-24",
+      "adLicenseExpiry": "2036-01-14",
+      "status": "نشطة"
+    },
+    {
+      "id": 103,
+      "number": "5622390",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2121,
+      "licenseExpiry": "2035-11-29",
+      "adLicenseExpiry": "2036-02-18",
+      "status": "نشطة"
+    },
+    {
+      "id": 104,
+      "number": "5677935",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2122,
+      "licenseExpiry": "2036-01-04",
+      "adLicenseExpiry": "2036-03-24",
+      "status": "نشطة"
+    },
+    {
+      "id": 105,
+      "number": "5733480",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2123,
+      "licenseExpiry": "2036-02-09",
+      "adLicenseExpiry": "2036-04-28",
+      "status": "نشطة"
+    },
+    {
+      "id": 106,
+      "number": "5789025",
+      "type": "هيونداي",
+      "model": "النترا",
+      "year": 2124,
+      "licenseExpiry": "2036-03-16",
+      "adLicenseExpiry": "2036-06-02",
+      "status": "نشطة"
+    },
+    {
+      "id": 107,
+      "number": "5844570",
+      "type": "تويوتا",
+      "model": "كامري",
+      "year": 2125,
+      "licenseExpiry": "2036-04-21",
+      "adLicenseExpiry": "2036-07-07",
+      "status": "نشطة"
+    }
+  ],
+  "deliveriesData": [
+    {
+      "id": 1,
+      "carNumber": "123435",
+      "driverName": "ياسر",
+      "phoneNumber": "67011143",
+      "restaurant": "الفيحاء",
+      "receiveDate": "2025-11-30",
+      "deliveryDate": "",
+      "notes": "",
+      "scratches": [
+        {
+          "id": 1,
+          "x": 126.5999755859375,
+          "y": 97.84999084472656,
+          "location": "الخلف"
+        },
+        {
+          "id": 2,
+          "x": 58.5999755859375,
+          "y": 97.84999084472656,
+          "location": "المقدمة"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "carNumber": "54545454545",
+      "driverName": "نتالبيئء",
+      "phoneNumber": "كمنتلبيء",
+      "restaurant": "الفيحاء",
+      "receiveDate": "2025-11-30",
+      "deliveryDate": "",
+      "notes": "",
+      "scratches": []
+    }
+  ],
+  "restaurantsData": [
+    {
+      "id": 1,
+      "name": "الفيحاء",
+      "type": "مطعم",
+      "address": "الفيحاء"
+    },
+    {
+      "id": 2,
+      "name": "شارع البحرين",
+      "type": "مطعم",
+      "address": "شارع البحرين"
+    },
+    {
+      "id": 3,
+      "name": "جمعية العدان والقصور",
+      "type": "مطعم",
+      "address": "جمعية العدان والقصور"
+    },
+    {
+      "id": 4,
+      "name": "الجابرية تكا و فرايد",
+      "type": "مطعم",
+      "address": "الجابرية تكا و فرايد"
+    },
+    {
+      "id": 5,
+      "name": "الفحاحيل",
+      "type": "مطعم",
+      "address": "الفحاحيل"
+    },
+    {
+      "id": 6,
+      "name": "أبو حليفة",
+      "type": "مطعم",
+      "address": "أبو حليفة"
+    },
+    {
+      "id": 7,
+      "name": "الرقعي",
+      "type": "مطعم",
+      "address": "الرقعي"
+    },
+    {
+      "id": 8,
+      "name": "مشرف",
+      "type": "مطعم",
+      "address": "مشرف"
+    },
+    {
+      "id": 9,
+      "name": "النافورة",
+      "type": "مطعم",
+      "address": "النافورة"
+    },
+    {
+      "id": 10,
+      "name": "القادسية",
+      "type": "مطعم",
+      "address": "القادسية"
+    },
+    {
+      "id": 11,
+      "name": "صباح السالم",
+      "type": "مطعم",
+      "address": "صباح السالم"
+    },
+    {
+      "id": 12,
+      "name": "الضباعية",
+      "type": "مطعم",
+      "address": "الضباعية"
+    },
+    {
+      "id": 13,
+      "name": "الشرق",
+      "type": "مطعم",
+      "address": "الشرق"
+    },
+    {
+      "id": 14,
+      "name": "الجابرية بنت الديك",
+      "type": "مطعم",
+      "address": "الجابرية بنت الديك"
+    },
+    {
+      "id": 15,
+      "name": "الجهراء الزويخ",
+      "type": "مطعم",
+      "address": "الجهراء الزويخ"
+    },
+    {
+      "id": 16,
+      "name": "الشويخ واره",
+      "type": "مطعم",
+      "address": "الشويخ واره"
+    },
+    {
+      "id": 17,
+      "name": "السيد ياسين",
+      "type": "مطعم",
+      "address": "السيد ياسين"
+    },
+    {
+      "id": 18,
+      "name": "الفنطاس",
+      "type": "مطعم",
+      "address": "الفنطاس"
+    },
+    {
+      "id": 19,
+      "name": "السندباد",
+      "type": "مطعم",
+      "address": "السندباد"
+    },
+    {
+      "id": 20,
+      "name": "المطار",
+      "type": "مطعم",
+      "address": "المطار"
+    },
+    {
+      "id": 21,
+      "name": "المنقف",
+      "type": "مطعم",
+      "address": "المنقف"
+    },
+    {
+      "id": 22,
+      "name": "حولي بارك",
+      "type": "مطعم",
+      "address": "حولي بارك"
+    },
+    {
+      "id": 23,
+      "name": "الرقة",
+      "type": "مطعم",
+      "address": "الرقة"
+    },
+    {
+      "id": 24,
+      "name": "الرحاب",
+      "type": "مطعم",
+      "address": "الرحاب"
+    },
+    {
+      "id": 25,
+      "name": "هدية",
+      "type": "مطعم",
+      "address": "هدية"
+    },
+    {
+      "id": 26,
+      "name": "نادي الصليبخات",
+      "type": "مطعم",
+      "address": "نادي الصليبخات"
+    },
+    {
+      "id": 27,
+      "name": "الجهراء الصناعية",
+      "type": "مطعم",
+      "address": "الجهراء الصناعية"
+    },
+    {
+      "id": 28,
+      "name": "الفروانية",
+      "type": "مطعم",
+      "address": "الفروانية"
+    },
+    {
+      "id": 29,
+      "name": "أسواق القرين",
+      "type": "مطعم",
+      "address": "أسواق القرين"
+    },
+    {
+      "id": 30,
+      "name": "سلوى",
+      "type": "مطعم",
+      "address": "سلوى"
+    },
+    {
+      "id": 31,
+      "name": "سوق الجليب",
+      "type": "مطعم",
+      "address": "سوق الجليب"
+    },
+    {
+      "id": 32,
+      "name": "الشهداء",
+      "type": "مطعم",
+      "address": "الشهداء"
+    },
+    {
+      "id": 33,
+      "name": "الدسمة وبنيد القار",
+      "type": "مطعم",
+      "address": "الدسمة وبنيد القار"
+    },
+    {
+      "id": 34,
+      "name": "جمعية صباح  الاحمد",
+      "type": "مطعم",
+      "address": "جمعية صباح  الاحمد"
+    },
+    {
+      "id": 35,
+      "name": "الافينيوز",
+      "type": "مطعم",
+      "address": "الافينيوز"
+    },
+    {
+      "id": 36,
+      "name": "الصليبية الصناعية",
+      "type": "مطعم",
+      "address": "الصليبية الصناعية"
+    },
+    {
+      "id": 37,
+      "name": "جمعية أبوفطيرة",
+      "type": "مطعم",
+      "address": "جمعية أبوفطيرة"
+    },
+    {
+      "id": 38,
+      "name": "غرب أبو فطيرة",
+      "type": "مطعم",
+      "address": "غرب أبو فطيرة"
+    },
+    {
+      "id": 39,
+      "name": "خيطان العصيمي",
+      "type": "مطعم",
+      "address": "خيطان العصيمي"
+    },
+    {
+      "id": 40,
+      "name": "الوفرة",
+      "type": "مطعم",
+      "address": "الوفرة"
+    },
+    {
+      "id": 41,
+      "name": "جمعية القيروان",
+      "type": "مطعم",
+      "address": "جمعية القيروان"
+    },
+    {
+      "id": 42,
+      "name": "شرق الاحمدي",
+      "type": "مطعم",
+      "address": "شرق الاحمدي"
+    },
+    {
+      "id": 43,
+      "name": "الفروانية فرع 2",
+      "type": "مطعم",
+      "address": "الفروانية فرع 2"
+    },
+    {
+      "id": 44,
+      "name": "جمعية الصليبية",
+      "type": "مطعم",
+      "address": "جمعية الصليبية"
+    },
+    {
+      "id": 45,
+      "name": "جمعية الزهراء",
+      "type": "مطعم",
+      "address": "جمعية الزهراء"
+    },
+    {
+      "id": 46,
+      "name": "جمعية مدينة جابر الأحمد",
+      "type": "مطعم",
+      "address": "جمعية مدينة جابر الأحمد"
+    },
+    {
+      "id": 47,
+      "name": "الخيران أوتليت مول",
+      "type": "مطعم",
+      "address": "الخيران أوتليت مول"
+    },
+    {
+      "id": 48,
+      "name": "الخيران أويا مول",
+      "type": "مطعم",
+      "address": "الخيران أويا مول"
+    },
+    {
+      "id": 49,
+      "name": "الجهراء ليالي الشرق",
+      "type": "مطعم",
+      "address": "الجهراء ليالي الشرق"
+    },
+    {
+      "id": 50,
+      "name": "الجهراء مجمع مكة ",
+      "type": "مطعم",
+      "address": "الجهراء مجمع مكة "
+    },
+    {
+      "id": 51,
+      "name": "العارضية الجديد",
+      "type": "مطعم",
+      "address": "العارضية الجديد"
+    },
+    {
+      "id": 52,
+      "name": "الري",
+      "type": "مطعم",
+      "address": "الري"
+    },
+    {
+      "id": 53,
+      "name": "مارينا مول",
+      "type": "مطعم",
+      "address": "مارينا مول"
+    },
+    {
+      "id": 54,
+      "name": "صباح السالم (العرين)",
+      "type": "مطعم",
+      "address": "صباح السالم (العرين)"
+    },
+    {
+      "id": 55,
+      "name": "مول 360",
+      "type": "مطعم",
+      "address": "مول 360"
+    },
+    {
+      "id": 56,
+      "name": "الخيول",
+      "type": "مطعم",
+      "address": "الخيول"
+    },
+    {
+      "id": 57,
+      "name": "مجمع الكوت",
+      "type": "مطعم",
+      "address": "مجمع الكوت"
+    }
+  ],
   "usersData": [
     {
       "id": 1,
@@ -31,5 +1491,5 @@
       "status": "نشط"
     }
   ],
-  "lastSync": "2024-01-01T00:00:00.000Z"
+  "lastUpdate": "2025-12-03T18:23:34.564Z"
 }
