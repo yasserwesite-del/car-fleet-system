@@ -2108,7 +2108,12 @@ function saveGitHubUrl() {
             // نموذج التسليم/الاستلام
             document.getElementById('showDeliveryForm').addEventListener('click', showDeliveryForm);
             document.getElementById('showReceiptForm').addEventListener('click', showReceiptForm);
-            document.getElementById('cancelDelivery').addEventListener('click', hideDeliveryForm);
+           // في حالة وجود هذا الكود، تأكد أنه يستدعي الدالة الصحيحة
+document.getElementById('cancelDelivery').addEventListener('click', function() {
+    hideDeliveryForm();
+    resetDeliveryForm();
+    alert('تم إلغاء العملية');
+});
             document.getElementById('saveDelivery').addEventListener('click', saveDelivery);
             document.getElementById('clearScratches').addEventListener('click', clearScratches);
             
@@ -2694,23 +2699,25 @@ function saveGitHubUrl() {
             }
         }
 
-               function showDeliveryForm() {
-            document.getElementById('deliveryForm').style.display = 'block';
-            document.getElementById('receiptForm').style.display = 'none';
-            document.getElementById('carNumber').value = '';
-            document.getElementById('restaurantName').value = '';
-            document.getElementById('driverName').value = '';
-            document.getElementById('phoneNumber').value = '';
-            document.getElementById('receiveDate').valueAsDate = new Date();
-            document.getElementById('deliveryDate').value = '';
-            document.getElementById('notes').value = '';
-            document.getElementById('carSearchResults').style.display = 'none';
-            document.getElementById('restaurantSearchResults').style.display = 'none';
-            document.getElementById('carNumberError').style.display = 'none';
-            document.getElementById('restaurantNameError').style.display = 'none';
-            editingDeliveryId = null;
-            clearScratches();
-        }
+              function showDeliveryForm() {
+    console.log('📝 فتح نموذج تسليم جديد');
+    
+    // إعادة تعيين النموذج
+    resetDeliveryForm();
+    
+    // إظهار النموذج
+    document.getElementById('deliveryForm').style.display = 'block';
+    document.getElementById('receiptForm').style.display = 'none';
+    
+    // تعيين تاريخ اليوم تلقائياً
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('receiveDate').value = today;
+    
+    // إخفاء النموذج الآخر
+    editingDeliveryId = null;
+    
+    console.log('✅ نموذج التسليم جاهز للاستخدام');
+}
 
         function showReceiptForm() {
             document.getElementById('receiptForm').style.display = 'block';
@@ -2737,16 +2744,66 @@ function saveGitHubUrl() {
         }
 
         function hideDeliveryForm() {
-            document.getElementById('deliveryForm').style.display = 'none';
-            document.getElementById('receiptForm').style.display = 'none';
-            document.getElementById('deliveryForm').reset();
-            document.getElementById('carSearchResults').style.display = 'none';
-            document.getElementById('restaurantSearchResults').style.display = 'none';
-            document.getElementById('carNumberError').style.display = 'none';
-            document.getElementById('restaurantNameError').style.display = 'none';
-            editingDeliveryId = null;
+    document.getElementById('deliveryForm').style.display = 'none';
+    document.getElementById('receiptForm').style.display = 'none';
+    
+    // إخفاء نتائج البحث
+    const carSearchResults = document.getElementById('carSearchResults');
+    const restaurantSearchResults = document.getElementById('restaurantSearchResults');
+    if (carSearchResults) carSearchResults.style.display = 'none';
+    if (restaurantSearchResults) restaurantSearchResults.style.display = 'none';
+    
+    // إخفاء رسائل الخطأ
+    const carNumberError = document.getElementById('carNumberError');
+    const restaurantNameError = document.getElementById('restaurantNameError');
+    if (carNumberError) carNumberError.style.display = 'none';
+    if (restaurantNameError) restaurantNameError.style.display = 'none';
+    
+    // إعادة تعيين المتغيرات
+    editingDeliveryId = null;
+    scratches = [];
+    
+    // تحديث قائمة الخدوش
+    updateScratchesList();
+    
+    console.log('✅ تم إخفاء نموذج التسليم');
+}
+        function resetDeliveryForm() {
+    // إعادة تعيين جميع حقول النموذج
+    const fields = [
+        'carNumber', 'restaurantName', 'driverName', 'phoneNumber',
+        'receiveDate', 'deliveryDate', 'notes'
+    ];
+    
+    fields.forEach(fieldId => {
+        const element = document.getElementById(fieldId);
+        if (element) {
+            if (element.type === 'date') {
+                if (fieldId === 'receiveDate') {
+                    element.valueAsDate = new Date(); // تاريخ اليوم
+                } else {
+                    element.value = '';
+                }
+            } else {
+                element.value = '';
+            }
         }
-
+    });
+    
+    // إعادة تعيين الخدوش
+    scratches = [];
+    updateScratchesList();
+    
+    // إخفاء رسائل الخطأ
+    document.getElementById('carNumberError').style.display = 'none';
+    document.getElementById('restaurantNameError').style.display = 'none';
+    
+    // إخفاء نتائج البحث
+    document.getElementById('carSearchResults').style.display = 'none';
+    document.getElementById('restaurantSearchResults').style.display = 'none';
+    
+    console.log('✅ تم إعادة تعيين نموذج التسليم');
+}
         function saveDelivery() {
             const carNumber = document.getElementById('carNumber').value.trim();
             const restaurantName = document.getElementById('restaurantName').value.trim();
