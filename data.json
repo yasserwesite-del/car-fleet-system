@@ -1,16 +1,6 @@
 {
   "carsData": [
     {
-      "id": 108,
-      "number": "99999",
-      "type": "ررررررررررررررررررر",
-      "model": "رررررررررررررررر",
-      "year": 2000,
-      "licenseExpiry": "2025-12-01",
-      "adLicenseExpiry": "2025-12-12",
-      "status": "نشطة"
-    },
-    {
       "id": 1,
       "number": "67120",
       "type": "تويوتا",
@@ -1081,16 +1071,6 @@
       "status": "نشطة"
     },
     {
-      "id": 108,
-      "number": "54545454545",
-      "type": "يييييييي",
-      "model": "بببببببب",
-      "year": 2000,
-      "licenseExpiry": "2009-12-01",
-      "adLicenseExpiry": null,
-      "status": "نشطة"
-    },
-    {
       "id": 109,
       "number": "11111111111",
       "type": "TTTTTTTTTT",
@@ -1518,5 +1498,5 @@
       "status": "نشط"
     }
   ],
-  "lastUpdate": "2025-12-03T20:30:30.759Z"
+  "lastUpdate": "2025-12-03T20:33:14.444Z"
 }
